@@ -20,6 +20,7 @@
             containers:
             - name: mysql
               image: openshift/mysql-55-centos7
+              command: ['sh', '-c', 'echo "Prasanth!" && sleep 500']
               securityContext:
                       privileged: true
               ports:
