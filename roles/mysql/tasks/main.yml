@@ -20,6 +20,8 @@
             containers:
             - name: mysql
               image: rhscl/mysql-80-rhel7
+              securityContext:
+                runAsUser: 1000
               ports:
               - containerPort: 3306
               env:
