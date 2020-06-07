@@ -26,7 +26,7 @@
               - name: MYSQL_ROOT_PASSWORD
                 value: password
               - name: MYSQL_LOWER_CASE_TABLE_NAMES
-                value: 1
+                value: "1"
               volumeMounts:
               - name: mysql-data
                 mountPath: "/var/lib/mysql"
