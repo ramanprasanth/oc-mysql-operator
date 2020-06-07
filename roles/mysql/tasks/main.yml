@@ -20,8 +20,6 @@
             containers:
             - name: mysql
               image: rhscl/mysql-80-rhel7
-              securityContext:
-                privileged: true
               ports:
               - containerPort: 3306
               env:
