@@ -19,7 +19,8 @@
           spec:
             containers:
             - name: mysql
-              image: rhscl/mysql-80-rhel7
+              #image: rhscl/mysql-80-rhel7
+              image: openshift/mysql-55-centos7
               securityContext:
                 runAsUser: 1000
                 runAsGroup: 3000
